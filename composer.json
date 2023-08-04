@@ -1,0 +1,21 @@
+{
+    "name": "qunity/module-online-product",
+    "description": "N/A",
+    "version": "0.1.0",
+    "type": "magento2-module",
+    "license": [
+        "proprietary"
+    ],
+    "require": {
+        "php": "^8.1",
+        "qunity/module-base": "^0.1"
+    },
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "Qunity\\OnlineProduct\\": "src"
+        }
+    }
+}

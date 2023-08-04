@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Catalog:etc/product_types.xsd">
+    <type name="online" label="Online Product" modelInstance="Qunity\OnlineProduct\Model\Product\Type\Online" composite="false" isQty="false" canUseQtyDecimals="false" indexPriority="10" sortOrder="10">
+        <priceModel instance="Qunity\OnlineProduct\Model\Product\Type\Online\Price"/>
+        <indexerModel instance="Qunity\OnlineProduct\Model\ResourceModel\Product\Indexer\Online\Price"/>
+        <customAttributes>
+            <attribute name="refundable" value="false"/>
+            <attribute name="is_real_product" value="false"/>
+            <attribute name="is_product_set" value="false"/>
+        </customAttributes>
+    </type>
+    <composableTypes>
+        <type name="online"/>
+    </composableTypes>
+</config>
